@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SECURITY META TAGS (HARDENING) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+
+  <title>Barira Jamil - Resume</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333333;
+      line-height: 1.4;
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #111111;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      color: #444444;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      color: #333333;
+    }
+    .contact-item a {
+      color: #333333;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+    .icon {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+    }
+    .separator {
+      color: #aaaaaa;
+      font-size: 10px;
+    }
+
+    /* Main Section Headers */
+    .section-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #0073e6;
+      text-transform: UPPERCASE;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+      border-bottom: 1.5px solid #0073e6;
+      padding-bottom: 2px;
+    }
+
+    /* Content Styling */
+    .summary-text {
+      font-size: 11px;
+      text-align: justify;
+      color: #333333;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    
+    .item-title {
+      font-size: 11.5px;
+      font-weight: bold;
+      color: #111111;
+    }
+    .item-title a {
+      color: #111111;
+      text-decoration: none;
+    }
+    .item-title a:hover {
+      text-decoration: underline;
+      color: #0073e6;
+    }
+    .item-date {
+      font-size: 11px;
+      color: #222222;
+      font-weight: bold;
+    }
+    .item-subtitle {
+      font-size: 11px;
+      font-style: italic;
+      color: #555555;
+      margin-bottom: 4px;
+    }
+    .item-subtitle a {
+      color: #0073e6;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Bullet Lists */
+    ul {
+      margin-left: 18px;
+      margin-bottom: 6px;
+    }
+    li {
+      font-size: 11px;
+      margin-bottom: 3px;
+      color: #333333;
+    }
+    li strong {
+      color: #111111;
+    }
+
+    .skills-list li {
+      list-style-type: square;
+    }
+
+    @media print {
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>BARIRA JAMIL</h1>
+    <div class="contact-info">
+      <!-- Email -->
+      <span class="contact-item">
+        <svg class="icon" fill="#EA4335" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a href="mailto:barirajamil1@gmail.com">barirajamil1@gmail.com</a>
+      </span>
+      <span class="separator">•</span>
+
+      <!-- Portfolio / GitHub Hosted Site -->
+      <span class="contact-item">
+        <svg class="icon" fill="#181717" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        <a href="https://barirajamil1.github.io/SOC-Log-Parser-ThreatIntel/" target="_blank">barirajamil1.github.io</a>
+      </span>
+      <span class="separator">•</span>
+
+      <!-- GitHub Profile -->
+      <span class="contact-item">
+        <svg class="icon" fill="#181717" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        <a href="https://github.com/barirajamil1" target="_blank">github.com/barirajamil1</a>
+      </span>
+      <span class="separator">•</span>
+
+      <!-- LinkedIn -->
+      <span class="contact-item">
+        <svg class="icon" fill="#0A66C2" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.6a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+        <a href="https://linkedin.com/in/barirajamil1" target="_blank">linkedin.com/in/barirajamil1</a>
+      </span>
+      <span class="separator">•</span>
+
+      <!-- TryHackMe -->
+      <span class="contact-item">
+        <svg class="icon" fill="#C1272D" viewBox="0 0 24 24"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6h-5.6z"/></svg>
+        <a href="https://tryhackme.com/p/barirahere" target="_blank">tryhackme.com/p/barirahere</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section-title">SUMMARY</div>
+  <p class="summary-text">
+    Proactive Cyber Security Specialist and BS Computer Science student with expertise in SOC operations, threat hunting, and incident response workflows. Google Certified Cybersecurity Professional skilled in SIEM monitoring, malware analysis basics, network intrusion detection, and automated log parsing. Proven track record of executing real-world threat simulation scenarios and hands-on offensive/defensive operations on TryHackMe. Adept at leveraging tools like Wireshark, Nmap, and Python scripts to mitigate security risks and fortify network infrastructure.
+  </p>
+
+  <!-- EDUCATION -->
+  <div class="section-title">EDUCATION</div>
+  <div class="item-header">
+    <span class="item-title">The Women University Multan</span>
+    <span class="item-date">2024 – Present</span>
+  </div>
+  <div class="item-subtitle">Bachelor of Science in Computer Science (BSCS) — CGPA: 3.62 / 4.00</div>
+  <ul>
+    <li><strong>Academic Status:</strong> 5th Semester (In Progress) | <strong>Expected Graduation:</strong> 2028 | <strong>Location:</strong> Multan, Pakistan</li>
+    <li><strong>Core Focus:</strong> Computer Networks, Operating Systems Security, Database Management Systems (SQL), Data Structures & Algorithms, and Scripting.</li>
+  </ul>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section-title">CERTIFICATIONS</div>
+  <div class="item-header">
+    <span class="item-title">
+      <a href="https://coursera.org/verify/professional-cert/I4HV6UFW0B6M" target="_blank">Google Cybersecurity Professional Certificate ↗</a>
+    </span>
+    <span class="item-date">Completed Aug 2026</span>
+  </div>
+  <div class="item-subtitle">
+    Coursera / Google | Credential ID: <a href="https://coursera.org/verify/professional-cert/I4HV6UFW0B6M" target="_blank">I4HV6UFW0B6M</a>
+  </div>
+  <ul>
+    <li>Comprehensive 8-course specialization covering threat analysis, SIEM tools (Splunk/Chronicle), IDS/IPS, Python scripting, and Linux administration.</li>
+  </ul>
+
+  <div class="item-header">
+    <span class="item-title">
+      <a href="https://tryhackme.com/p/barirahere" target="_blank">TryHackMe Security Practitioner</a>
+    </span>
+    <span class="item-date">Active</span>
+  </div>
+  <div class="item-subtitle">Top-Ranked Globally | Competitive Security Labs</div>
+  <ul>
+    <li>Earned specialized badges in SOC Level 1, Web Application Security, Network Defense, and Linux Fundamentals.</li>
+  </ul>
+
+  <!-- SECURITY LABS & PROJECTS -->
+  <div class="section-title">SECURITY LABS & TECHNICAL PROJECTS</div>
+  
+  <div class="item-header">
+    <span class="item-title">SOC Operations & Threat Detection Labs</span>
+    <span class="item-date">TryHackMe & Practical Environments</span>
+  </div>
+  <ul>
+    <li><strong>SIEM & Log Analysis:</strong> Monitored system and application logs, identified indicators of compromise (IOCs), and investigated suspicious activity in SIEM dashboards.</li>
+    <li><strong>Network Intrusion & Traffic Analysis:</strong> Captured and analyzed PCAP packets using Wireshark to isolate network anomalies, malicious payloads, and unauthorized port scans.</li>
+    <li><strong>Vulnerability Assessment & Recon:</strong> Conducted active/passive network scanning using Nmap to map open ports, detect service versions, and identify OS vulnerabilities.</li>
+    <li><strong>Automated Task Scripting:</strong> Developed custom Python and SQL scripts for log parsing, quick data querying, and automating repetitive triage operations.</li>
+    <li><strong>Endpoint & System Defense:</strong> Hardened Linux (Ubuntu/Kali) environments, configured privilege structures, and executed firewalls & IDS rule validation.</li>
+  </ul>
+
+  <div class="item-header">
+    <span class="item-title">Web Development & Hardened Portfolios</span>
+    <span class="item-date">Personal Projects</span>
+  </div>
+  <ul>
+    <li><strong>Interactive Terminal Portfolio:</strong> Designed and deployed a responsive, dark-theme command-line interface portfolio hosted on GitHub Pages.</li>
+    <li><strong>Web Security Hardening:</strong> Implemented Content Security Policy (CSP), HTTP Security Headers, and SSL/TLS encryption to achieve an A-Grade rating on SecurityHeaders.</li>
+  </ul>
+
+  <!-- SKILLS -->
+  <div class="section-title">SKILLS</div>
+  <ul class="skills-list">
+    <li><strong>SOC & Incident Response:</strong> SIEM Monitoring, Threat Hunting, Log Triage, Incident Response Workflows, Intrusion Detection (IDS/IPS)</li>
+    <li><strong>Networking & Security Tools:</strong> TCP/IP, Wireshark, Nmap, Firewalls, Packet Analysis, Kali Linux, Ubuntu, SQL</li>
+    <li><strong>Programming & Scripting:</strong> Python (Security Scripting), C++, Bash Basics, SQL Queries, HTML5, CSS3, JavaScript</li>
+    <li><strong>Security Concepts:</strong> Vulnerability Assessment, Threat Intelligence, Port Scanning, Linux System Hardening</li>
+  </ul>
+
+</body>
+</html>
